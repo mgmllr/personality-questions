@@ -1,0 +1,6 @@
+article#question
+  h1= model.question
+
+  p
+    ' Answer:
+    model.answer

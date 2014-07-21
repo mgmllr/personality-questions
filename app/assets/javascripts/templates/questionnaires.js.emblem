@@ -1,0 +1,10 @@
+article#questionnaires
+  h1 Personality Questionnaires
+  link-to 'questionnaires.new'
+    'New Questionnaire
+  ul
+    each questionnaire in controller
+      link-to 'questionnaire' questionnaire tagName="li"
+        questionnaire.id
+
+outlet

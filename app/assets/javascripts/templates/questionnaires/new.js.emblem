@@ -1,0 +1,39 @@
+article#question
+  h1 New Questionnaire
+
+  form
+    fieldset
+      dl
+        dt: label Question:
+        dd: view Ember.Select content=sampleQuestions value=fields1.question
+
+      dl
+        dt: label Answer:
+        dd: view Ember.TextField value=fields1.answer
+
+    fieldset.actions
+      input type='submit' value='Answer question' click="createQuestion1"
+
+    fieldset
+      dl
+        dt: label Question:
+        dd: view Ember.Select content=sampleQuestions value=fields2.question
+
+      dl
+        dt: label Answer:
+        dd: view Ember.TextField value=fields2.answer
+
+    fieldset.actions
+      input type='submit' value='Answer question' click="createQuestion2"
+
+    fieldset
+      dl
+        dt: label Question:
+        dd: view Ember.Select content=sampleQuestions value=fields3.question
+
+      dl
+        dt: label Answer:
+        dd: view Ember.TextField value=fields3.answer
+
+    fieldset.actions
+      input type='submit' value='Answer question' click="createQuestion3"

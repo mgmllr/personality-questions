@@ -1,0 +1,27 @@
+article#question
+  h1 New Question
+
+  form
+    fieldset
+      dl
+        dt: label Question:
+        dd: view Ember.Select content=sampleQuestions value=fields.question
+
+      dl
+        dt: label Answer:
+        dd: view Ember.TextField value=fields.answer
+
+    fieldset.actions
+      input type='submit' value='Answer question' click="createQuestion"
+
+    fieldset
+      dl
+        dt: label Question:
+        dd: view Ember.Select content=sampleQuestions value=fields.question
+
+      dl
+        dt: label Answer:
+        dd: view Ember.TextField value=fields.answer
+
+    fieldset.actions
+      input type='submit' value='Answer question' click="createQuestion"

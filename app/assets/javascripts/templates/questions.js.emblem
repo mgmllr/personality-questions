@@ -1,0 +1,8 @@
+article#questions
+  h1 Questions
+  ul
+    each question in controller
+      link-to 'question' question tagName="li"
+        question.id
+
+outlet

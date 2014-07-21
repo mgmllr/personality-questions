@@ -1,0 +1,7 @@
+article#questionnaire
+  h1= model.id
+
+  each question in model.questions
+    h3= question.question
+    p= question.answer
+
